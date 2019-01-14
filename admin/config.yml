@@ -1,0 +1,14 @@
+backend:
+  name: github
+  repo: matippetts/netlify-cms-jekyll
+publish_mode: editorial_workflow
+media_folder: "images"
+collections:
+  - name: "post"
+    label: "Post"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      
